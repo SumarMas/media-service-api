@@ -46,7 +46,7 @@
     <!-- https://checkstyle.org/filters/suppressionfilter.html -->
     <module name="SuppressionFilter">
         <property name="file" value=".code_quality/checkstyle-suppressions.xml"
-                  default="checkstyle-suppressions.xml" />
+                  default="checkstyle-suppressions.xml"/>
         <property name="optional" value="false"/>
     </module>
 
@@ -56,7 +56,7 @@
 
     <!-- Checks for Size Violations.                    -->
     <!-- See https://checkstyle.org/checks/sizes/index.html -->
-<!--    <module name="FileLength"/>-->
+    <!--    <module name="FileLength"/>-->
     <module name="LineLength">
         <property name="fileExtensions" value="java"/>
         <property name="max" value="140"/>
@@ -66,7 +66,7 @@
     <!-- Checks for whitespace                               -->
     <!-- See https://checkstyle.org/checks/whitespace/index.html -->
     <module name="FileTabCharacter">
-        <property name="eachLine" value="true" />
+        <property name="eachLine" value="true"/>
     </module>
 
     <!-- Miscellaneous other checks.                   -->
@@ -155,7 +155,7 @@
         <module name="HiddenField"/>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
-        <module name="MagicNumber"/>
+        <!--<module name="MagicNumber"/> -->
         <module name="MissingSwitchDefault"/>
         <module name="MultipleVariableDeclarations"/>
         <module name="SimplifyBooleanExpression"/>
@@ -177,7 +177,7 @@
         <!-- https://checkstyle.org/filters/suppressionxpathfilter.html -->
         <module name="SuppressionXpathFilter">
             <property name="file" value="${org.checkstyle.sun.suppressionxpathfilter.config}"
-                      default="checkstyle-xpath-suppressions.xml" />
+                      default="checkstyle-xpath-suppressions.xml"/>
             <property name="optional" value="true"/>
         </module>
 

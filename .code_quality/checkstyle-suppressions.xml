@@ -5,12 +5,12 @@
         "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
 
 <suppressions>
-    <suppress files="[\\/]target[\\/]" checks="." />
-    <suppress files="[\\/]build[\\/]" checks="." />
-    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MagicNumber" />
-    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MultipleStringLiterals" />
-    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MissingJavadocMethod" />
-    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MissingJavadocType" />
-    <suppress files=".+Application\.java" checks="UncommentedMain" />
+    <suppress files="[\\/]target[\\/]" checks="."/>
+    <suppress files="[\\/]build[\\/]" checks="."/>
+    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MagicNumber"/>
+    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MultipleStringLiterals"/>
+    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MissingJavadocMethod"/>
+    <suppress files=".*[\\/]src[\\/](test)([^\\/]*)?[\\/]" checks="MissingJavadocType"/>
+    <suppress files=".+Application\.java" checks="UncommentedMain"/>
 
 </suppressions>

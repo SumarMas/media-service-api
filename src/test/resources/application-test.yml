@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:media_service_test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+
+  sql:
+    init:
+      mode: never
+app:
+  name: Media Service Test
+  desc: Service for media management - Test
+  version: 1.0.0
+  url: http://localhost:8083
+  dev-name: "Sumar+"
+  dev-email: "-"
+  file-storage-path: ${FILE_STORAGE_PATH:./files-test/}
+springdoc:
+  packages-to-scan: com.platform.media_service.controllers
+  show-actuator: true
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui.html
+# Evita registrar en Eureka y Zipkin durante los tests
+eureka:
+  client:
+    enabled: false
+
+management:
+  tracing:
+    enabled: false
+
