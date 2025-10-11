@@ -1,6 +1,7 @@
 package com.platform.media_service.services.implementations;
 
 import com.platform.media_service.services.IHashService;
+import lombok.RequiredArgsConstructor;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -15,6 +16,7 @@ import java.security.NoSuchAlgorithmException;
  * them with provided values for integrity checks.
  */
 @Service
+@RequiredArgsConstructor
 public class HashService implements IHashService {
     /** Logger for logging information, warnings, and errors. */
     private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(HashService.class);

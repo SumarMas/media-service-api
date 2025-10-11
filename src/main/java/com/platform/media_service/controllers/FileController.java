@@ -79,6 +79,7 @@ public class FileController {
                     content = @Content(schema = @Schema(implementation = ErrorApi.class))
             )
     })
+    @SuppressWarnings("PMD.LooseCoupling")
     @GetMapping("/getFile/{uuid}")
     public ResponseEntity<byte[]> getFile(@PathVariable String uuid) {
         FileResponseDto responseDto = getFileService.getFileById(uuid);

@@ -145,7 +145,7 @@ public class SaveFileService implements ISaveFileService {
     private void generateArchive(FileDto fileDto, ArchiveModel archive) {
         archive.setId(UUID.randomUUID());
         archive.setName(fileDto.getFile().getOriginalFilename());
-        archive.setExtension(archive.getName().substring(archive.getName().lastIndexOf(".") + 1));
+        archive.setExtension(archive.getName().substring(archive.getName().lastIndexOf('.') + 1));
         try {
             archive.setHashSha256(hashService.getSha256String(fileDto.getFile()));
         } catch (IOException e) {

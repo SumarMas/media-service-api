@@ -2,6 +2,7 @@ package com.platform.media_service.services.implementations;
 
 
 import com.platform.media_service.services.IFileSystemService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.util.Base64;
  * creating directories, and writing files.
  */
 @Service
+@RequiredArgsConstructor
 public class FileSystemService implements IFileSystemService {
     /**
      * Checks if a file or directory exists at the specified path.
