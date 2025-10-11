@@ -1,0 +1,12 @@
+com.platform.media_service
+com.platform.media_service.configs
+com.platform.media_service.context
+com.platform.media_service.controllers
+com.platform.media_service.controllers.manageExceptions
+com.platform.media_service.dtos
+com.platform.media_service.dtos.common
+com.platform.media_service.entities
+com.platform.media_service.models
+com.platform.media_service.repositories
+com.platform.media_service.services
+com.platform.media_service.services.implementations
