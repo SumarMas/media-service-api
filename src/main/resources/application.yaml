@@ -1,4 +1,9 @@
 spring:
+  servlet:
+    multipart:
+      max-file-size: ${MAX_FILE_SIZE:50MB}
+      max-request-size: ${MAX_REQUEST_SIZE:60MB}
+      enabled: true
   application:
     name: media-service
   datasource:
